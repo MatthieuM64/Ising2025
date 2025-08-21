@@ -1,5 +1,5 @@
-/*C++ CODE - MANGEAT MATTHIEU - 2021*/
-/*ACTIVE POTTS MODEL*/
+/*C++ CODE - MANGEAT MATTHIEU - 2025*/
+/*ISING MODEL*/
 
 //////////////////////
 ///// LIBRAIRIES /////
@@ -32,13 +32,13 @@ using namespace std;
 ///// BASIC FUNCTIONS /////
 ///////////////////////////
 
-//Index function
+//Index function.
 int index(const int &x0, const int &y0, const int &LX)
 {
 	return y0*LX+x0;
 }
 
-//Creation of the spin
+//Creation of the spin.
 void Ising_init(unique_ptr<atomic<int>[]> &SPIN, const int &Nsites, const int &init)
 {
 	for (int i=0; i<Nsites; i++)
